@@ -54,6 +54,16 @@ body {
     display: none !important;
 }
 
+.logo-and-wordmark {
+    display: none !important;
+}
+
+.search-inner-wrapper {
+     display: none !important;
+}
+html.private {
+    background-color: #463e4b !important;
+}
 
 /* /////////////////////// */
 /* #transparent */
