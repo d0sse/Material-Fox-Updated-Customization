@@ -12,10 +12,21 @@ body {
     opacity: 0 !important;
 }
 
-.activity-stream .personalize-button {
+#tracking-protection-icon-container {
     display: none !important;
 }
 
+#identity-permission-box {
+    display: none !important;
+}
+
+#notification-popup-box {
+    display: none !important;
+}
+
+.activity-stream .personalize-button {
+    display: none !important;
+}
 
 #nav-bar #back-button image {
     list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important;
