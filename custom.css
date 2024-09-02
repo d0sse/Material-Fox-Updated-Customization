@@ -2,6 +2,7 @@
 html,
 body {
     /* add your css below  userChrome.chrome-refresh-2023 userChrome.system-accent-colors*/
+    --md-accent-color : AccentColor;
 }
 
 #alltabs-button {
