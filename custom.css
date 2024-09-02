@@ -1,8 +1,7 @@
 :root,
 html,
 body {
-    /* add your css below */
-    --mf-selection-text-color: #FFF !important;
+    /* add your css below  userChrome.chrome-refresh-2023 userChrome.system-accent-colors*/
 }
 
 #alltabs-button {
@@ -16,29 +15,7 @@ body {
 .activity-stream .personalize-button {
     display: none !important;
 }
-@media (prefers-color-scheme: light) {
-    #navigator-toolbox {
-        background-color: color-mix(in srgb, var(--mf-accent-color) 20%, var(--mf-background-color-50)) !important;
-        &:-moz-window-inactive {
-            background-color: var(--toolbox-non-lwt-bgcolor-inactive) !important;
-            color: var(--toolbox-non-lwt-textcolor-inactive);
-            opacity: var(--inactive-titlebar-opacity);
-        }
-    }
-}
-@media (prefers-color-scheme: dark) {
-    #navigator-toolbox {
-        &:-moz-window-inactive {
-            background-color: var(--toolbox-non-lwt-bgcolor-inactive) !important;
-            color: var(--toolbox-non-lwt-textcolor-inactive);
-            opacity: var(--inactive-titlebar-opacity);
-        }
-    }
-}
 
-#nav-bar {
-    border-radius: 8px 8px 0 0 !important;
-}
 
 #nav-bar #back-button image {
     list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important;
@@ -58,144 +35,6 @@ body {
     display: none !important;
 }
 
-.search-inner-wrapper {
-     display: none !important;
-}
 html.private {
     background-color: #1f2020 !important;
-}
-
-/* /////////////////////// */
-/* #transparent */
-/* /////////////////////// */
-/*
-:root#main-window {
-    background-color: transparent !important;
-}
-
-:root:not(:-moz-window-inactive) #navigator-toolbox {
-    background-color: transparent !important;
-}
-
-:root #TabsToolbar,
-:root #titlebar,
-:root #tabbrowser-tabs {
-    -moz-default-appearance: menupopup !important;
-    appearance: auto !important;
-    background-color: transparent !important;
-}
-
-:root:-moz-window-inactive .tab-content {
-    opacity: 0.6;
-}
-
-:root {
-    --toolbarbutton-hover-background: color-mix(in srgb, currentColor 11%, transparent) !important;
-    --toolbarbutton-active-background: color-mix(in srgb, currentColor 21%, transparent) !important;
-}
-
-#nav-bar {
-    border-radius: 0px 0px 0 0 !important;
-}
-*/
-/* /////////////////////// */
-/* /////////////////////// */
-/* use variables when about:config variable userChrome.system-accent-colors is true */
-@media (-moz-bool-pref: "userChrome.system-accent-colors") {
-  /* use variables when dark mode */
-  @media (prefers-color-scheme: dark) {
-    :root,
-    html,
-    body {
-      --mf-accent-color: color-mix(in srgb, var(--mf-white) 15%, AccentColor);
-      --mf-tab-opacity: 0.9;
-      --mf-background-color-0: color-mix(
-        in srgb,
-        var(--mf-grey-900) 85%,
-        var(--mf-accent-color)
-      );
-      --mf-background-color-50: color-mix(
-        in srgb,
-        var(--mf-grey-900-white-4-percent) 85%,
-        var(--mf-accent-color)
-      );
-      --mf-background-color-100: color-mix(
-        in srgb,
-        var(--mf-grey-900-white-5-percent) 85%,
-        var(--mf-accent-color)
-      );
-      --mf-menu-background-color-hover: color-mix(
-        in srgb,
-        var(--mf-grey-800) 85%,
-        var(--mf-accent-color)
-      );
-      --mf-menu-border-color: color-mix(
-        in srgb,
-        var(--mf-grey-800) 85%,
-        var(--mf-accent-color)
-      );
-      --mf-text-on-accent: var(--mf-white);
-      --mf-secondary-button-text: var(--mf-white);
-      --mf-content-separator-color: color-mix(
-        in srgb,
-        #606164 90%,
-        var(--mf-accent-color)
-      );
-      --mf-selection-background-color: color-mix(
-        in srgb,
-        var(--mf-grey-900) 15%,
-        var(--mf-accent-color)
-      );
-    }
-  }
-
-  /* use variables when light mode */
-  @media (prefers-color-scheme: light) {
-    :root,
-    html,
-    body {
-      --mf-accent-color: color-mix(
-        in srgb,
-        var(--mf-grey-900) 15%,
-        AccentColor
-      );
-      --mf-tab-opacity: 0.9;
-      --mf-background-color-0: color-mix(
-        in srgb,
-        #dee1e6 90%,
-        var(--mf-accent-color)
-      );
-      --mf-background-color-50: color-mix(
-        in srgb,
-        var(--mf-grey-100) 90%,
-        var(--mf-accent-color)
-      );
-      --mf-background-color-100: color-mix(
-        in srgb,
-        var(--mf-white) 90%,
-        var(--mf-accent-color)
-      );
-      --mf-menu-background-color-hover: color-mix(
-        in srgb,
-        var(--mf-background-color-0) 90%,
-        var(--mf-accent-color)
-      );
-      --mf-menu-border-color: color-mix(
-        in srgb,
-        var(--mf-background-color-0) 90%,
-        var(--mf-accent-color)
-      );
-      --mf-content-separator-color: color-mix(
-        in srgb,
-        #dbdcdd 90%,
-        var(--mf-accent-color)
-      );
-      --mf-secondary-button-text: var(--mf-accent-color);
-      --mf-selection-background-color: color-mix(
-        in srgb,
-        #dee1e6 10%,
-        var(--mf-accent-color)
-      );
-    }
-  }
 }
