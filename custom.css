@@ -5,6 +5,10 @@ body {
     --md-accent-color : AccentColor;
 }
 
+#tab-preview-panel {
+    display: none !important;
+}
+
 #alltabs-button {
     display: none !important;
 }
