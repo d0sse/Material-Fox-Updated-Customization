@@ -54,3 +54,41 @@ body {
 html.private {
     background-color: #1f2020 !important;
 }
+
+/* ------------------------------------ */
+/* Firefox Translucent Tabbar for macOS */
+/* ------------------------------------ */
+@media (prefers-color-scheme: dark) {
+    :root#main-window {
+        background-color: #00000033 !important;
+    }
+
+    :root:not(:-moz-window-inactive) #navigator-toolbox {
+        background-color: #00000033 !important;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root#main-window {
+        background-color: #cccccc33 !important;
+    }
+
+    :root:not(:-moz-window-inactive) #navigator-toolbox {
+        background-color: #cccccc33 !important;
+    }
+}
+/* make tabs toolbar translucent */
+:root #TabsToolbar,
+:root #titlebar,
+:root #tabbrowser-tabs {
+    -moz-default-appearance: -moz-window-titlebar !important;
+    appearance: -moz-window-titlebar !important;
+    background-color: transparent !important;
+}
+
+
+/* recolor toolbar button hover/active bg colors to semi-transparent */
+:root {
+    --toolbarbutton-hover-background: color-mix(in srgb, currentColor 11%, transparent) !important;
+    --toolbarbutton-active-background: color-mix(in srgb, currentColor 21%, transparent) !important;
+}

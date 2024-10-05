@@ -14,34 +14,34 @@
       --md-tab-opacity: 0.9;
       --md-background-color-0: color-mix(
         in srgb,
-        var(--md-grey-900) 85%,
+        var(--md-grey-900) 100%,
         var(--md-accent-color)
       );
       --md-background-color-50: color-mix(
         in srgb,
-        var(--md-grey-900-white-4-percent) 85%,
+        var(--md-grey-900-white-4-percent) 100%,
         var(--md-accent-color)
       );
       --md-background-color-100: color-mix(
         in srgb,
-        var(--md-grey-900-white-5-percent) 85%,
+        var(--md-grey-900-white-5-percent) 100%,
         var(--md-accent-color)
       );
       --md-menu-background-color-hover: color-mix(
         in srgb,
-        var(--md-grey-800) 85%,
+        var(--md-grey-800) 100%,
         var(--md-accent-color)
       );
       --md-menu-border-color: color-mix(
         in srgb,
-        var(--md-grey-800) 85%,
+        var(--md-grey-800) 100%,
         var(--md-accent-color)
       );
       --md-text-on-accent: var(--md-white);
       --md-secondary-button-text: var(--md-white);
       --md-content-separator-color: color-mix(
         in srgb,
-        #606164 90%,
+        #606164 100%,
         var(--md-accent-color)
       );
       --md-selection-text-color: var(--md-text-on-accent);
@@ -56,7 +56,7 @@
     body {
       --md-accent-color: color-mix(
         in srgb,
-        var(--md-grey-900) 15%,
+        var(--md-grey-900) 100%,
         AccentColor
       );
       --md-tab-background-color-hover: color-mix(
@@ -67,27 +67,27 @@
       --md-tab-opacity: 0.9;
       --md-background-color-0: color-mix(
         in srgb,
-        #dee1e6 90%,
+        #dee1e6 100%,
         var(--md-accent-color)
       );
       --md-background-color-50: color-mix(
         in srgb,
-        var(--md-grey-100) 90%,
+        var(--md-grey-100) 100%,
         var(--md-accent-color)
       );
       --md-background-color-100: color-mix(
         in srgb,
-        var(--md-white) 90%,
+        var(--md-white) 100%,
         var(--md-accent-color)
       );
       --md-menu-background-color-hover: color-mix(
         in srgb,
-        var(--md-background-color-0) 90%,
+        var(--md-background-color-0) 100%,
         var(--md-accent-color)
       );
       --md-menu-border-color: color-mix(
         in srgb,
-        var(--md-background-color-0) 90%,
+        var(--md-background-color-0) 100%,
         var(--md-accent-color)
       );
       --md-content-separator-color: color-mix(
