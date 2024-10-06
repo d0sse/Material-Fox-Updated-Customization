@@ -60,21 +60,21 @@ html.private {
 /* ------------------------------------ */
 @media (prefers-color-scheme: dark) {
     :root#main-window {
-        background-color: #00000033 !important;
+        background-color: #00000055 !important;
     }
 
     :root:not(:-moz-window-inactive) #navigator-toolbox {
-        background-color: #00000033 !important;
+        background-color: #00000055 !important;
     }
 }
 
 @media (prefers-color-scheme: light) {
     :root#main-window {
-        background-color: #cccccc33 !important;
+        background-color: #cccccc55 !important;
     }
 
     :root:not(:-moz-window-inactive) #navigator-toolbox {
-        background-color: #cccccc33 !important;
+        background-color: #cccccc55 !important;
     }
 }
 /* make tabs toolbar translucent */
