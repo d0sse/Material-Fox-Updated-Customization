@@ -118,18 +118,6 @@ body {
   }
 }
 
-/* border between tab bar and navbar */
-:root #nav-bar {
-  box-shadow: 0 -1px 0 0 hsla(280,6%,0%,0.1), 0 -4px 4px -5px hsla(280,6%,0%,0.2);
-}
-
-@media (-moz-content-prefers-color-scheme: dark) {
-  :root #nav-bar {
-    
-    box-shadow: 0 -1px 0 0 hsla(280,6%,0%,0.3), 0 -4px 4px -5px hsla(280,6%,0%,0.05) !important;
-  }
-}
-
 #nav-bar {
     border-radius: 8px 8px 0px 0px !important;
 }
