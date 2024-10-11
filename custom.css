@@ -52,28 +52,32 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
+
     :root,
     html,
     body {
         --md-accent-color: color-mix(in srgb, var(--md-white) 15%, AccentColor);
-        --md-tab-background-color-hover: color-mix(
-            in srgb,
-            transparent 75%,
-            var(--md-accent-color)
-        );
+        --md-tab-background-color-hover: color-mix(in srgb,
+                transparent 75%,
+                var(--md-accent-color));
         --md-tab-opacity: 0.9;
     }
 }
+
+html.private {
+    background-color: var(--md-grey-900-white-5-percent) !important;
+}
+
 /* ------------------------------------ */
 /* Firefox Translucent Tabbar for macOS */
 /* ------------------------------------ */
 
 :root#main-window {
-   background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 :root:not(:-moz-window-inactive) #navigator-toolbox {
-  background-color: transparent !important; 
+    background-color: transparent !important;
 }
 
 /* make tabs toolbar translucent */
@@ -82,40 +86,43 @@ body {
 :root #nav-bar-customization-target,
 :root #PanelUI-button,
 :root #tabbrowser-tabs {
-   -moz-default-appearance: -moz-window-titlebar !important;
-   appearance: -moz-window-titlebar !important;
-   background-color: transparent !important;
+    -moz-default-appearance: -moz-window-titlebar !important;
+    appearance: -moz-window-titlebar !important;
+    background-color: transparent !important;
 }
 
 /* De-emphasize tab icons and names when window is unfocused */
 :root:-moz-window-inactive .tab-content {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 /* recolor toolbar button hover/active bg colors to semi-transparent */
 :root {
-   --toolbarbutton-hover-background: color-mix(in srgb, currentColor 11%, transparent) !important;
-   --toolbarbutton-active-background: color-mix(in srgb, currentColor 21%, transparent) !important;
+    --toolbarbutton-hover-background: color-mix(in srgb, currentColor 11%, transparent) !important;
+    --toolbarbutton-active-background: color-mix(in srgb, currentColor 21%, transparent) !important;
 }
 
 /* improve border visiblity for selected tabs */
 .tab-background:is([selected], [multiselected]):-moz-lwtheme {
-   border:  none !important;
+    border: none !important;
 }
+
 #tabbrowser-tabs:not([noshadowfortests]) .tab-background:is([selected], [multiselected]) {
-   box-shadow: 0 0 0 var(--tabs-navbar-shadow-size) rgba(0,0,0,.1), 0 1px 5px rgba(0,0,0,.1) !important;
+    box-shadow: 0 0 0 var(--tabs-navbar-shadow-size) rgba(0, 0, 0, .1), 0 1px 5px rgba(0, 0, 0, .1) !important;
 }
+
 :root:-moz-window-inactive #tabbrowser-tabs:not([noshadowfortests]) .tab-background:is([selected], [multiselected]) {
-   box-shadow: 0 0 0 var(--tabs-navbar-shadow-size) rgba(0,0,0,.05) !important;
+    box-shadow: 0 0 0 var(--tabs-navbar-shadow-size) rgba(0, 0, 0, .05) !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-  :root #tabbrowser-tabs:not([noshadowfortests]) .tab-background:is([selected], [multiselected]) {
-     box-shadow: 0 0 0 var(--tabs-navbar-shadow-size) hsla(280,6%,60%,0.5) inset, 0 0 0 var(--tabs-navbar-shadow-size) rgba(0,0,0,.6), 0 1px 5px rgba(0,0,0,.1) !important;
-  }
-  :root:-moz-window-inactive #tabbrowser-tabs:not([noshadowfortests]) .tab-background:is([selected], [multiselected]) {
-     box-shadow: 0 0 0 var(--tabs-navbar-shadow-size) rgba(0,0,0,.4) !important;
-  }
+    :root #tabbrowser-tabs:not([noshadowfortests]) .tab-background:is([selected], [multiselected]) {
+        box-shadow: 0 0 0 var(--tabs-navbar-shadow-size) hsla(280, 6%, 60%, 0.5) inset, 0 0 0 var(--tabs-navbar-shadow-size) rgba(0, 0, 0, .6), 0 1px 5px rgba(0, 0, 0, .1) !important;
+    }
+
+    :root:-moz-window-inactive #tabbrowser-tabs:not([noshadowfortests]) .tab-background:is([selected], [multiselected]) {
+        box-shadow: 0 0 0 var(--tabs-navbar-shadow-size) rgba(0, 0, 0, .4) !important;
+    }
 }
 
 #nav-bar {
