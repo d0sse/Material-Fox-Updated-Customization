@@ -71,7 +71,7 @@ html.private {
 /* ------------------------------------ */
 /* Firefox Translucent Tabbar for macOS */
 /* ------------------------------------ */
-
+/* 
 :root#main-window {
     background-color: transparent !important;
 }
@@ -80,7 +80,6 @@ html.private {
     background-color: transparent !important;
 }
 
-/* make tabs toolbar translucent */
 :root #TabsToolbar,
 :root #titlebar,
 :root #nav-bar-customization-target,
@@ -91,18 +90,15 @@ html.private {
     background-color: transparent !important;
 }
 
-/* De-emphasize tab icons and names when window is unfocused */
 :root:-moz-window-inactive .tab-content {
     opacity: 0.6;
 }
 
-/* recolor toolbar button hover/active bg colors to semi-transparent */
 :root {
     --toolbarbutton-hover-background: color-mix(in srgb, currentColor 11%, transparent) !important;
     --toolbarbutton-active-background: color-mix(in srgb, currentColor 21%, transparent) !important;
 }
 
-/* improve border visiblity for selected tabs */
 .tab-background:is([selected], [multiselected]):-moz-lwtheme {
     border: none !important;
 }
@@ -127,4 +123,4 @@ html.private {
 
 #nav-bar {
     border-radius: 8px 8px 0px 0px !important;
-}
+} */
