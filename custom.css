@@ -71,7 +71,7 @@ html.private {
 /* ------------------------------------ */
 /* Firefox Translucent Tabbar for macOS */
 /* ------------------------------------ */
-/* 
+/*
 :root#main-window {
     background-color: transparent !important;
 }
@@ -91,7 +91,7 @@ html.private {
 }
 
 :root:-moz-window-inactive .tab-content {
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 :root {
