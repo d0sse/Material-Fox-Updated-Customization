@@ -1,8 +1,58 @@
-:root,
-html,
-body {
-    /* add your css below  userChrome.chrome-refresh-2023 userChrome.system-accent-colors*/
-    --md-accent-color: AccentColor !important;
+@media (prefers-color-scheme: dark) {
+
+    :root,
+    html,
+    body {
+        --tint-background-color: #353638;
+        --md-accent-color: AccentColor !important;
+        --md-background-color-0: color-mix(in srgb,
+                #1f2023 100%,
+                var(--tint-background-color));
+        --md-background-color-50: color-mix(in srgb,
+                var(--md-background-color-0) 50%,
+                var(--tint-background-color));
+        --md-background-color-100: color-mix(in srgb,
+                var(--md-white) 0%,
+                var(--tint-background-color));
+        --md-menu-background-color-hover: color-mix(in srgb,
+                var(--md-background-color-0) 90%,
+                var(--tint-background-color));
+        --md-menu-border-color: color-mix(in srgb,
+                var(--md-background-color-0) 100%,
+                var(--tint-background-color));
+        --md-content-separator-color: color-mix(in srgb,
+                #121212 90%,
+                var(--md-accent-color));
+    }
+}
+
+/* use variables when light mode */
+@media (prefers-color-scheme: light) {
+
+    :root,
+    html,
+    body {
+        --tint-background-color: #f2f3f4;
+        --md-accent-color: AccentColor !important;
+        --md-background-color-0: color-mix(in srgb,
+                #bebebe 85%,
+                var(--tint-background-color));
+        --md-background-color-50: color-mix(in srgb,
+                var(--md-background-color-0) 50%,
+                var(--tint-background-color));
+        --md-background-color-100: color-mix(in srgb,
+                var(--md-white) 0%,
+                var(--tint-background-color));
+        --md-menu-background-color-hover: color-mix(in srgb,
+                var(--md-background-color-0) 75%,
+                var(--tint-background-color));
+        --md-menu-border-color: color-mix(in srgb,
+                var(--md-background-color-0) 100%,
+                var(--tint-background-color));
+        --md-content-separator-color: color-mix(in srgb,
+                #dbdcdd 90%,
+                var(--md-accent-color));
+    }
 }
 
 #tab-preview-panel {
@@ -51,18 +101,7 @@ body {
     display: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
 
-    :root,
-    html,
-    body {
-        --md-accent-color: color-mix(in srgb, var(--md-white) 15%, AccentColor);
-        --md-tab-background-color-hover: color-mix(in srgb,
-                transparent 75%,
-                var(--md-accent-color));
-        --md-tab-opacity: 0.9;
-    }
-}
 
 html.private {
     background-color: var(--md-grey-900-white-5-percent) !important;
@@ -120,7 +159,4 @@ html.private {
         box-shadow: 0 0 0 var(--tabs-navbar-shadow-size) rgba(0, 0, 0, .4) !important;
     }
 }
-
-#nav-bar {
-    border-radius: 8px 8px 0px 0px !important;
-} */
+*/
