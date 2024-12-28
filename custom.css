@@ -1,3 +1,4 @@
+/* use variables when dark mode */
 @media (prefers-color-scheme: dark) {
 
     :root,
@@ -55,6 +56,10 @@
     }
 }
 
+#nav-bar {
+    border-radius: 8px 8px 0px 0px !important;
+}
+
 #tab-preview-panel {
     display: none !important;
 }
@@ -100,8 +105,6 @@
 .logo-and-wordmark {
     display: none !important;
 }
-
-
 
 html.private {
     background-color: var(--md-grey-900-white-5-percent) !important;
