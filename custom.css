@@ -60,6 +60,15 @@
     border-radius: 8px 8px 0px 0px !important;
 }
 
+#TabsToolbar {
+    margin-left: 5px !important;
+    margin-top: -1px !important;
+}
+
+#TabsToolbar .titlebar-buttonbox-container {
+    margin-top: 4px !important;
+}
+
 #tab-preview-panel {
     display: none !important;
 }
