@@ -65,6 +65,14 @@
     margin-top: -1px !important;
 }
 
+#urlbar[breakout-extend] {
+    margin: 4px !important;
+    border-radius: 16px !important;
+    border: 1px solid #cecece !important;
+    /* Soft glow effect */
+    /*box-shadow: 0px 0px 10px #bebebe !important;*/
+}
+
 #TabsToolbar .titlebar-buttonbox-container {
     margin-top: 4px !important;
 }
