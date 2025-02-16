@@ -105,7 +105,7 @@
     display: none !important;
 }
 
-#nav-bar #back-button image {
+/* #nav-bar #back-button image {
     list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important;
     padding: 5px !important;
 }
@@ -113,7 +113,7 @@
 #nav-bar #forward-button image {
     list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important;
     padding: 5px !important;
-}
+} */
 
 .tabbrowser-tab::after {
     display: none !important;
