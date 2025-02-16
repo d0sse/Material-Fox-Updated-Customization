@@ -4,6 +4,7 @@
     :root,
     html,
     body {
+        --box-border: #111111;
         --tint-background-color: #353638;
         --md-accent-color: AccentColor !important;
         --md-background-color-0: color-mix(in srgb,
@@ -33,6 +34,7 @@
     :root,
     html,
     body {
+        --box-border: #cecece;
         --tint-background-color: #f2f3f4;
         --md-accent-color: AccentColor !important;
         --md-background-color-0: color-mix(in srgb,
@@ -68,7 +70,7 @@
 #urlbar[breakout-extend] {
     margin: 4px !important;
     border-radius: 16px !important;
-    border: 1px solid #cecece !important;
+    border: 1px solid var(--box-border) !important;
     /* Soft glow effect */
     /*box-shadow: 0px 0px 10px #bebebe !important;*/
 }
@@ -105,7 +107,8 @@
     display: none !important;
 }
 
-/* #nav-bar #back-button image {
+/* 
+#nav-bar #back-button image {
     list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important;
     padding: 5px !important;
 }
