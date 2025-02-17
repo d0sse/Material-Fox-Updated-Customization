@@ -66,7 +66,7 @@
 
 #TabsToolbar {
     margin-left: 6px !important;
-    margin-top: -1px !important;
+    /*margin-top: -1px !important;*/
 }
 
 #urlbar[breakout-extend] {
@@ -113,18 +113,30 @@
 #nav-bar #back-button image {
     /* list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important; */
     padding: 7px !important;
-    margin-left: 1px !important;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
 }
 
 #nav-bar #forward-button image {
     /* list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important; */
     padding: 7px !important;
-    margin-left: 1px !important;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
 }
 
 #nav-bar #stop-reload-button image {
     padding: 7px !important;
-    margin-left: 1px !important;
+    margin-left: 2px !important;
+    margin-right: 10px !important;
+}
+
+#nav-bar #unified-extensions-button {
+    margin-left: 10px !important;
+    margin-right: 2px !important;
+}
+
+#downloads-button {
+    margin-left: 2px !important;
     margin-right: 4px !important;
 }
 
