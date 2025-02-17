@@ -25,6 +25,9 @@
         --md-content-separator-color: color-mix(in srgb,
                 #121212 90%,
                 var(--md-accent-color));
+        --md-selection-background-color: color-mix(in srgb,
+                #121212 90%,
+                var(--md-accent-color));
     }
 }
 
@@ -53,6 +56,9 @@
                 var(--md-background-color-0) 100%,
                 var(--tint-background-color));
         --md-content-separator-color: color-mix(in srgb,
+                #dbdcdd 90%,
+                var(--md-accent-color));
+        --md-selection-background-color: color-mix(in srgb,
                 #dbdcdd 90%,
                 var(--md-accent-color));
     }
