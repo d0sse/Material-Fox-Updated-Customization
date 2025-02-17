@@ -26,7 +26,10 @@
                 #121212 90%,
                 var(--md-accent-color));
         --md-selection-background-color: color-mix(in srgb,
-                #121212 90%,
+                #121212 20%,
+                var(--md-accent-color));
+        --md-tab-background-color-hover: color-mix(in srgb,
+                #121212 60%,
                 var(--md-accent-color));
     }
 }
@@ -59,7 +62,7 @@
                 #dbdcdd 90%,
                 var(--md-accent-color));
         --md-selection-background-color: color-mix(in srgb,
-                #dbdcdd 90%,
+                #dbdcdd 80%,
                 var(--md-accent-color));
     }
 }
