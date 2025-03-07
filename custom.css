@@ -157,6 +157,10 @@
     display: none !important;
 }
 
+.tab-audio-button {
+    display: none !important;
+}
+
 html.private {
     background-color: var(--md-grey-900-white-5-percent) !important;
 }
