@@ -5,10 +5,10 @@
     html,
     body {
         --box-border: #111111;
-        --tint-background-color: #353638;
+        --tint-background-color: #363636;
         --md-accent-color: AccentColor !important;
         --md-background-color-0: color-mix(in srgb,
-                #1f2023 100%,
+                #1e1e1e 100%,
                 var(--tint-background-color));
         --md-background-color-50: color-mix(in srgb,
                 var(--md-background-color-0) 50%,
@@ -41,10 +41,10 @@
     html,
     body {
         --box-border: #cecece;
-        --tint-background-color: #f2f3f4;
+        --tint-background-color: #f3f3f3;
         --md-accent-color: AccentColor !important;
         --md-background-color-0: color-mix(in srgb,
-                #bebebe 85%,
+                #bdbdbd 85%,
                 var(--tint-background-color));
         --md-background-color-50: color-mix(in srgb,
                 var(--md-background-color-0) 50%,
