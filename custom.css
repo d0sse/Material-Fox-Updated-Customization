@@ -165,9 +165,9 @@ html.private {
     background-color: var(--md-grey-900-white-5-percent) !important;
 }
 
-/* ------------------------------------ */
-/* Firefox Translucent Tabbar for macOS */
-/* ------------------------------------ */
+/* ------------------------------------- */
+/* Firefox Translucent Tab bar for macOS */
+/* ------------------------------------- */
 /*
 :root#main-window {
     background-color: transparent !important;
