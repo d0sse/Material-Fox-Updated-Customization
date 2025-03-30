@@ -17,6 +17,3 @@ _**Note:** This setup looks best on macOS_
 2. replace custom.css file in chrome directory
 
 Enjoy 🎉
-
-made in italy
-🟥⬜️🟩
