@@ -5,7 +5,7 @@
     html,
     body {
         --box-border: #111111;
-        --tint-background-color: #363636;
+        --tint-background-color: #2d2d2f;
         --md-accent-color: AccentColor !important;
         --md-background-color-0: color-mix(in srgb,
                 #1e1e1e 100%,
@@ -41,7 +41,7 @@
     html,
     body {
         --box-border: #cecece;
-        --tint-background-color: #f3f3f3;
+        --tint-background-color: #f1f0f2;
         --md-accent-color: AccentColor !important;
         --md-background-color-0: color-mix(in srgb,
                 #bdbdbd 85%,
