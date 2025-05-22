@@ -3,7 +3,7 @@
 ## tested on macOS
 
 Hi!👋
-I'm [d0sse](https://github.com/d0sse) and this is my customization of the firefox theme **[MaterialFox-Updated](https://github.com/edelvarden/material-fox-updated)**.
+I'm [d0sse](https://github.com/d0sse) and this is my customization of the firefox theme **[MaterialFox-Updated](https://github.com/edelvarden/material-fox-updated)**
 
 | Light Version | Dark Version |
 |---|---|
