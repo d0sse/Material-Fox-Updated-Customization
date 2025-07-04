@@ -16,4 +16,4 @@ _**Note:** This setup looks best on macOS_
 1. Follow instructions on **[MaterialFox-Updated Readme](https://github.com/M0kh/MaterialFox-Updated?tab=readme-ov-file#recommended-instructions)**
 2. replace custom.css file in chrome directory
 
-Enjoy 🎉
+Enjoy
